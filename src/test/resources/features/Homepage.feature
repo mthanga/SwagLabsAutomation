@@ -3,7 +3,7 @@ Feature:To check login functionality of swaglaps
 	Background:
 		Given user launching the app
 		
-	@AddToCart
+	@AddToCart @all
 	Scenario Outline: TC003_Validating user can able to add products to cart
 		When user enters "User Name" as "<validusername>"
 		And user enters "Password" as "<validpassword>"
@@ -16,7 +16,7 @@ Feature:To check login functionality of swaglaps
 		|standard_user|secret_sauce|
 		
 		
-	@Order
+	@Order @all
 	Scenario Outline: TC004_Validating user can able complete the order
 		When user enters "User Name" as "<validusername>"
 		And user enters "Password" as "<validpassword>"

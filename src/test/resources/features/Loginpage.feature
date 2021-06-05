@@ -3,7 +3,7 @@ Feature:To check login functionality of swaglaps
 	Background:
 		Given user launching the app
 	
-	@login
+	@login @all
 	Scenario Outline: TC001_Validating the login functionality of swaglabs app
 		When user enters "User Name" as "<validusername>"
 		And user enters "Password" as "<validpassword>"
@@ -14,7 +14,7 @@ Feature:To check login functionality of swaglaps
 		|validusername|validpassword|
 		|standard_user|secret_sauce|
 		
-	@InvalidLogin
+	@InvalidLogin @all
 	Scenario Outline: TC002_Validating the login functionality with invalid credentials
 		When user enters "User Name" as "<invalidusername>"
 		And user clicks on the login button

@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 import drivermanager.DriverManager;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features",glue= {"stepdefinition"}, tags={"@AddToCart"},
+@CucumberOptions(features = "src/test/resources/features",glue= {"stepdefinition"}, tags={"@all"},
 monochrome=true)
 public class Runner {
 	
