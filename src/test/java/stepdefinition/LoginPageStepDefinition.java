@@ -18,6 +18,12 @@ public class LoginPageStepDefinition extends BaseStepDefinition{
 		System.out.println("-----------Execution starts--------------");
 		getDriver();
 	}
+	
+	@Given("^user closing the app$")
+    public void userClosingTheApp() throws Throwable {
+		System.out.println("-----------Execution completed--------------");
+		getDriver().quit();
+	}
 
 	@When("^user enters \"([^\"]*)\" as \"([^\"]*)\"$")
     public void userEntersUserNameAndPassword(String field, String value) throws Throwable {
